@@ -2,10 +2,6 @@ language: python
 python:
  - "3.5"
 script: python3 -m unittest
-before_install:
-        - choco install python3
-        - export PATH="/c/Python35:/c/Python35/Scripts:$PATH"
-        - python -m pip install --upgrade pip wheel
 install:
  - pip install -r requirements.txt
 
